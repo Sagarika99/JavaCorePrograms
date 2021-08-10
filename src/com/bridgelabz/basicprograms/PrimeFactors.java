@@ -2,7 +2,7 @@ package com.bridgelabz.basicprograms;
 
 import java.util.Scanner;
 
-public class Factors {
+public class PrimeFactors {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Value of N: ");
@@ -14,9 +14,6 @@ public class Factors {
 	            Num = Num/i;
 	         }
 	      }
-	    //  if(Num >2) {
-	   // 	  System.out.println(Num);
-	   //   }
 	}
 
 }
