@@ -18,12 +18,6 @@ public class SwapNumbers {
 		a = b;
 		b = temp;
 		
-		System.out.println("After swapping numbers are " +a+ " and " +b);
-		
-		
-		
-		
+		System.out.println("After swapping numbers are " +a+ " and " +b);		
 	}
-	
-
 }
