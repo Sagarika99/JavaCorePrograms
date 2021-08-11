@@ -9,11 +9,18 @@ public class HarmonicNum {
 		int HarmonicN = sc.nextInt();
 		double result = 0.0;
 		
-			for (int i=1; i<=HarmonicN; i++) {
-				result = result + (double)1/i;
-				System.out.println(+result);
+		while(HarmonicN != 0) {
+			result = result + (double)1/HarmonicN;
+			System.out.println(result);
+			HarmonicN--;
 		}
+			
 		
 	}
 
 }
+
+//for (int i=1; i<=HarmonicN; i++) {
+	//result = result + (double)1/i;
+	//System.out.println(+result);
+//}
