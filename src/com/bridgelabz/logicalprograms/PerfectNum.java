@@ -1,4 +1,5 @@
 package com.bridgelabz.logicalprograms;
+
 import java.util.Scanner;
 public class PerfectNum {
 	public static void main(String[] args) {
@@ -21,5 +22,4 @@ public class PerfectNum {
 		}
 		
 	}
-
 }
