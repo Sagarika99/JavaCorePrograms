@@ -34,7 +34,7 @@ public class StockPortfolio {
 		for (int i=0; i<stocks.length; i++) {
 			int value = stocks[i].sharePrice*stocks[i].numOfShares;
 			totalvalue += value;
-			System.out.println("Stocks [StockName=" + stocks[i].StockName + ", numOfShares=" + stocks[i].numOfShares + ", sharePrice=" + stocks[i].sharePrice + "] Total cost  "+value);			
+			System.out.println("Stocks [StockName=" + stocks[i].stockName + ", numOfShares=" + stocks[i].numOfShares + ", sharePrice=" + stocks[i].sharePrice + "] Total cost  "+value);			
 		}
 		System.out.println("Total value of Stocks : "+totalvalue);
 	}
