@@ -13,7 +13,6 @@ public class StockPortfolio {
 		for (int i=0; i<companyStocks; i++) {
 			addStocks();
 		}
-		
 	}
 	
 	public void addStocks(){
