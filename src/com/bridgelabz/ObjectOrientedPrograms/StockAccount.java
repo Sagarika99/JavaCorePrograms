@@ -93,8 +93,8 @@ public class StockAccount {
 				System.out.println("You have saved your purchase");
 			}
 			else if(name.equals("sell")) {
-				save[i] = {"sell",sellStocks};
-				//save[i+1] = ;
+				save[i] = "sell";
+				save[i+1] = sellStocks;
 				System.out.println("You have saved your selling details");
 			}
 			
