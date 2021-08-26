@@ -6,12 +6,11 @@ public class StockAccount {
 	
 	public Scanner sc = new Scanner(System.in);
 	public Stock[] CompanyStocks;
-	public Object[] save = new Object[2];
 	public int sellStocks;
 	public int buyStocks;
-	public String compSymbol;
+	public String companySymbol;
 		
-	public void StockAccnt() {
+	void StockAccnt() {
 		System.out.println("Enter the no of Company Stocks: ");
 		int compStocks = sc.nextInt();
 		CompanyStocks =  new Stock[compStocks];
@@ -50,7 +49,7 @@ public class StockAccount {
 				System.out.println("To save your transactions press 1.");
 				int choice = sc.nextInt();
 				if (choice==1) {
-					saveStocks("buy",buyStocks);
+					saveStocks(CompanyStocks[i],"buy",buyStocks);
 					break;
 				}
 				else {
@@ -74,7 +73,7 @@ public class StockAccount {
 				System.out.println("To save your transactions press 1.");
 				int choice = sc.nextInt();
 				if (choice==1) {
-					saveStocks("sell",sellStocks);
+					saveStocks(CompanyStocks[i],"sell",sellStocks);
 					break;
 				}
 				else {
@@ -85,17 +84,21 @@ public class StockAccount {
 		}	
 	}
 	
-	public void saveStocks(String name, int numofshares) {
-		for (int i=0; i<save.length; i++) {
+	public void saveStocks(Stock stocks,String name, int personshares) {
+		for (int i=0; i<CompanyStocks.length; i++) {
 			if (name.equals("buy")) {
-				save[i] = "buy";
-				save[i+1] = buyStocks;
-				System.out.println("You have saved your purchase");
+				//stocks.numOfShares = personshares;
+				//userStocks[i] = stocks;
+				//save[i] = "buy";
+				//save[i+1] = buyStocks;
+				System.out.println("You have saved your purchase [ "+name+" "+personshares+" shares ]");
 			}
 			else if(name.equals("sell")) {
-				save[i] = "sell";
-				save[i+1] = sellStocks;
-				System.out.println("You have saved your selling details");
+				//stocks.numOfShares = personshares;
+				//userStocks[i] = stocks;				
+				//save[i] = "sell";
+				//save[i+1] = sellStocks;
+				System.out.println("You have saved your selling details [ "+name+" "+personshares+" shares ]");
 			}
 			
 		}
